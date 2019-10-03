@@ -12,10 +12,11 @@ spring:
     show-sql: true
     database: mysql
   rabbitmq:
-    host: 192.168.26.129
+    host: 192.168.26.130
 eureka:
   instance:
     prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://127.0.0.1:8686/eureka/ 
+ip: 1.1.1.1
