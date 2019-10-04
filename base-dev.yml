@@ -18,5 +18,5 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8686/eureka/ 
+      defaultZone: http://192.168.26.130:8686/eureka/
 ip: 1.1.1.1

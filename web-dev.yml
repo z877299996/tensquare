@@ -8,7 +8,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8686/eureka/
+      defaultZone: http://192.168.26.130:8686/eureka/
 zuul:
   routes:
     tensquare-base:
@@ -20,6 +20,24 @@ zuul:
     tensquare-qa:
       path: /qa/**
       serviceId: tensquare-qa
+    tensquare-article:
+      path: /article/**
+      serviceId: tensquare-article
+    tensquare-friend:
+      path: /friend/**
+      serviceId: tensquare-friend
+    tensquare-gathering:
+      path: /gathering/**
+      serviceId: tensquare-gathering
+    tensquare-recruit:
+      path: /recruit/**
+      serviceId: tensquare-recruit
+    tensquare-search:
+      path: /search/**
+      serviceId: tensquare-search
+    tensquare-spit:
+      path: /spit/**
+      serviceId: tensquare-spit
   sensitive-headers:
     - Cookie
     - Set-Cookie
